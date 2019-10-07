@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+	<title>Crystal Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel ="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="        crossorigin="anonymous">
+    </script>
+    
 </head>
 <body>
-        
+	<div id="container">
+		<h1>Crystal Collector!</h1>
+		<section id="content">
+			<p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add             aspecific amount of points to your total score.
+			</p>
+            <p>You win the game by matching your total score to random number, you lose the     game if your total score goes above the random number.
+            </p>
+        	<p>The value of each crystal is hidden from you until you click on it.
+            </p>
+        	<p>Each time when the game starts, the game will change the values of each crystal.
+            </p>
+        </section>
+        <div id="gemPanel">
+			<img id="gem1HTML" class="shadowfilter" src="assets/images/gem1.jpg">
+            <img id="gem2HTML" class="shadowfilter" src="assets/images/gem2.jpg">		
+            <img id="gem3HTML" class="shadowfilter" src="assets/images/gem3.jpg">
+			<img id="gem4HTML" class="shadowfilter" src="assets/images/gem4.jpg">
+        </div>
+		<section id="scoring">
+			<p id="randomNumElm"></p>
+			<div id="winLoss">
+				<p id="winHTML">Win</p>
+				<p id="lossHTML">Loss</p>
+            </div>
+        </section>
+		
+        <div id="totalScorePanel">
+			<p id="userScoreElm">Your total score is:</p>
+        </div>
+        <footer>
+            <p>\_~.^_/</p>
+        </footer>
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
