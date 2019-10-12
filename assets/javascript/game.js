@@ -6,9 +6,9 @@ let total;
 let target;
 
 $(document).ready(function(){
-    function randomNumGenerator(num){
-	    return Math.floor(Math.random()*num);
-    };
+    // function randomNumGenerator(num){
+	//     return Math.floor(19 + Math.random() * num);
+    // };
 
     function gameSetup(){
 	    total = 0;
