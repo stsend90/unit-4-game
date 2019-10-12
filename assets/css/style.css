@@ -2,7 +2,7 @@ body {
     background: url(https://cache.desktopnexus.com/cropped-wallpapers/642/642304-1920x1080-[DesktopNexus.com].jpg?st=qB2SFXL6RLgIaC-SrLSUfw&e=1570885085);
     font-weight: bold;
     font-size: 20px;
-    color: darkred;
+    color: coral;
     font-family: 'Courier New', Courier, monospace;
     /* text-align: center; */
     margin-bottom: 20px;
@@ -43,4 +43,5 @@ footer {
     margin-bottom: 0;
     margin-top: 2%;
     height: 80px;
+    text-align: center;
 }

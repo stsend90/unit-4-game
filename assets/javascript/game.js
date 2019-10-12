@@ -1,6 +1,6 @@
 let gemValues = [1, 2, 3, 4, 5];
-let win =0;
-let loss =0;
+let win = 0;
+let loss = 0;
 let alreadyChoosenValues;
 let total;
 let target;
@@ -11,19 +11,19 @@ $(document).ready(function(){
     };
 
     function gameSetup(){
-	    total =0;
-	    target = randomNumGenerator(50);
+	    total = 0;
+	    target = randomNumGenerator(120);
 
 	    if(target === 0){
-		    target = randomNumGenerator(50);
+		    target = randomNumGenerator(120);
 
 	    };
-	    $('#randomNumElm').html(target);
+	    $('#randomNumElm').html("Winning Number: " + target);
 	    $('#userScoreElm').html("Your total score is: ");
 	
 	    alreadyChoosenValues =[];
 	
-	    while (alreadyChoosenValues.length !=4) {
+	    while (alreadyChoosenValues.length !==4) {
 		    let gemIndex = randomNumGenerator(gemValues.length);
 		    let gemRandomNum = gemValues[gemIndex];
 		    if(alreadyChoosenValues.indexOf(gemRandomNum) === -1){
