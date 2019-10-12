@@ -6,9 +6,9 @@ let total;
 let target;
 
 $(document).ready(function(){
-    // function randomNumGenerator(num){
-	//     return Math.floor(19 + Math.random() * num);
-    // };
+    function randomNumGenerator(num){
+	    return Math.floor(Math.random()* num);
+    };
 
     function gameSetup(){
 	    total = 0;
@@ -76,14 +76,14 @@ $(document).ready(function(){
 
     $("#gem3HTML").on("click", function() {
         total = total +gem3;
-        console.log(total + " user total");
+        // console.log(total + " user total");
         document.getElementById('userScoreElm').innerHTML="Your total score is: " + total;
         gameStatus();
     });
 
     $("#gem4HTML").on("click", function() {
         total = total +gem4;
-        console.log(total + " user total");
+        // console.log(total + " user total");
         document.getElementById('userScoreElm').innerHTML="Your total score is: " + total;
         gameStatus();
     });
